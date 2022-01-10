@@ -57,7 +57,7 @@ export default class Display extends Component {
                     <p style={{backgroundColor: "blue", borderRadius:"5px"}}>Plot: {this.state.plot} </p>
 
                     <button onClick ={this.clickMe} className = "Button2">
-                        Back
+                        New Episode
                     </button>
                 </div>
 
