@@ -41,10 +41,10 @@ export default class Display extends Component {
     render(){
         return (
 
-            <div className="Form" style={{padding:"3%"}}>
+            <div className="Background" style={{padding:"3%"}}>
                 
                 <div className="Display"  >
-                {/* <h1>Recommended Episode</h1> */}
+                <h1>SpongeBob Episode Recommender</h1>
                 
                 <img src={this.state.imageLink} alt="Spongebob" style={{margin: "0 auto", maxWidth: "20vh"}}></img>
 
@@ -56,7 +56,7 @@ export default class Display extends Component {
 
                     <p style={{backgroundColor: "blue", borderRadius:"5px"}}>Plot: {this.state.plot} </p>
 
-                    <button onClick ={this.clickMe} className = "Button2">
+                    <button onClick ={this.clickMe} className = "Button">
                         New Episode
                     </button>
                 </div>
