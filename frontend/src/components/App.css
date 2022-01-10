@@ -1,4 +1,24 @@
+.Home {
+  text-align: center;
+  min-height: 100vh;
+  background-image: url('squad.png');
+  /* background-repeat: no-repeat; */
+  background-size:100%;
+}
+
 .Button{
+  margin-top: 32vh;
+  padding: 2% 4%;
+  font-size: 20px;
+  background-color: pink;
+  border-radius: 10px;
+  outline: 0;
+  /* border-color: lightblue; */
+  /* border: 0px; */
+  /* box-shadow: 0px 2px 2px lightblue; */
+  cursor: pointer;
+}
+.Button2{
   padding: 2% 4%;
   font-size: 3vh;
   background-color: pink;
@@ -24,7 +44,7 @@
   border-radius: 10px;
 }
 
-.Background {
+.Form {
 
   /* display: flex;
   flex-direction: column;
