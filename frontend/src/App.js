@@ -9,7 +9,7 @@ function App() {
   return (
         <Router>
           <Route path="/" exact component={HomePage} />
-          <Route path="/display" component={DisplayPage} />
+          <Route path="/display" exact component={DisplayPage} />
         </Router>
   );
 }
