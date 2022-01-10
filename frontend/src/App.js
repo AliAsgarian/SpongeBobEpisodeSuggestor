@@ -8,8 +8,8 @@ import DisplayPage from "./components/display.component";
 function App() {
   return (
         <Router>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/display" exact component={DisplayPage} />
+          <Route path="/" exact component={DisplayPage} />
+          <Route path="/display" exact component={HomePage} />
         </Router>
   );
 }
