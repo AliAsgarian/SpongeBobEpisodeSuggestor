@@ -1,12 +1,10 @@
-.Button{
-  padding: 2% 4%;
-  font-size: 3vh;
-  background-color: pink;
-  border-radius: 10px;
-  outline: 0;
-  cursor: pointer;
+.Background {
+  text-align: center;
+  min-height: 100vh;
+  background-image: url('squad.png');
+  background-size:100%;
+  padding: 3%;
 }
-
 
 .Display {
   min-height: 50vh;
@@ -17,24 +15,41 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
   margin-left: 5%;
   margin-right: 5%;
-  /* margin-top: 4%; */
+  margin-top: 2%;
   border-radius: 10px;
 }
 
-.Form {
-
-  text-align: center;
-  min-height: 100vh;
-  background-image: url('squad.png');
-  background-size:100%;
+.TextBox{
+  /* background-color: rgb(165, 165, 247); */
+  font-weight: 700;
+  background-color: rgba(112, 112, 206, 0.5);
+  border-radius: 5px;
 }
 
+.Button{
+  padding: 2% 4%;
+  font-size: 3vh;
+  font-weight: 700;
+  background-color: pink;
+  border-radius: 10px;
+  outline: 0;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.Button:hover{
+  opacity: 1;
+  background-color: rgb(230, 153, 165);
+}
+
+.image{
+  margin: 1% auto 2% auto;
+  max-width: 30vh;
+  /* border-radius: 10px; */
+}
 h1{
   font-size: 4.5vh;
+  font-weight: bold;
 }
-
-
-

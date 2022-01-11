@@ -42,28 +42,27 @@ export default class Display extends Component {
     render(){
         return (
 
-            <div className="Form" style={{padding:"3%"}}>
+            <div className="Background">
                 
-                <div className="Display"  >
-                <h1>Random SpongeBob Episode</h1>
+                <div className="Display">
+                    <h1>Random SpongeBob Episode</h1>
                 
-                <img src={this.state.imageLink} alt="Spongebob" style={{margin: "0 auto", maxWidth: "20vh"}}></img>
+                    <img src={this.state.imageLink} alt="Spongebob" className="image"></img>
+                    <div className="TextBox">
+                        <p> Episode Title: {this.state.episodeName} </p>      
 
-                <p style={{backgroundColor: "blue", borderRadius:"5px", marginTop:"5%"}}> Episode Title: {this.state.episodeName} </p>
+                        <p> Episode Number: {this.state.episodeNumber} </p>
 
-                    <p style={{backgroundColor: "blue", borderRadius:"5px"}}> Episode Number: {this.state.episodeNumber} </p>
+                        <p> Rating: {this.state.rating} </p>
 
-                    <p style={{backgroundColor: "blue", borderRadius:"5px"}}> Rating: {this.state.rating} </p>
-
-                    <p style={{backgroundColor: "blue", borderRadius:"5px"}}>Plot: {this.state.plot} </p>
+                        <p>Plot: {this.state.plot} </p>
+                    </div>
+                   
 
                     <button onClick ={this.clickMe} className = "Button">
                         New Episode
                     </button>
                 </div>
-
-                
-
             </div>
             
         )
