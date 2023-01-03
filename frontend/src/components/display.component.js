@@ -13,7 +13,6 @@ export default class Display extends Component {
             episodeNumber: '',
             rating: 0,
             plot: '',
-            imageLink: '',
         }
     }
 
@@ -25,7 +24,6 @@ export default class Display extends Component {
                 episodeNumber: response.data[0].episodeNumber,
                 rating: response.data[0].rating,
                 plot: response.data[0].plot,
-                imageLink: response.data[0].imageLink,
             })   
         })
         .catch(function (error) {
@@ -47,7 +45,6 @@ export default class Display extends Component {
                 <div className="Display">
                     <h1>Random SpongeBob Episode</h1>
                 
-                    <img src={this.state.imageLink} alt="Spongebob" className="image"></img>
                     <div className="TextBox">
                         <p> Episode Title: {this.state.episodeName} </p>      
 
