@@ -18,7 +18,7 @@ export default class Display extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://spongebob-random.herokuapp.com/episode/")
+        axios.get("https://spongebobepisodesuggestor-backend.onrender.com/episode/")
         .then(response => {
             this.setState({
                 episodeName: response.data[0].episodeName,
